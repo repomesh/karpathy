@@ -1,5 +1,5 @@
 # Karpathy
-An agentic Machine Learning Engineer that trains state-of-the-art ML models using Claude Code SDK and Google ADK.
+An agentic Machine Learning Engineer that trains state-of-the-art ML models using Claude Code SDK and Google ADK. This is a very simple implemenation demonstraing the power of Claude Scientific Skills for machine learning.
 
 ## Prerequisites
 
@@ -28,6 +28,8 @@ AGENT_MODEL=your_model_name_here  # Optional: defaults to model configured in AD
 
 The `OPENROUTER_API_KEY` is required for the agent to function properly.
 
+This is the same environment variable that will be copied to the `sandbox` directory so the agents can use any API keys you provide here.
+
 ## Quick Start
 
 Run the startup script to set up the sandbox and start the ADK web interface:
@@ -41,6 +43,12 @@ This automatically:
 2. Sets up a Python virtual environment with ML packages (PyTorch, transformers, scikit-learn, etc.)
 3. Copies your `.env` file to the sandbox
 4. Starts the ADK web interface
+5. Select `karpathy` in the top left under 'Select an agent'
+6. All outputs will be in the `sandbox` directory so continue to monitor that as you converse with the agent
+
+## Claude Scientific Skills
+
+This repository is designed to work with the **[Claude Scientific Skills](https://github.com/K-Dense-AI/claude-scientific-skills)** collection of ready-to-use scientific tools and workflows ([link](https://github.com/K-Dense-AI/claude-scientific-skills)). The `start.py` setup script creates a `sandbox` that includes scientific skills from this collection so the `karpathy` agent can leverage specialized ML libraries and scientific workflows. For full details on the skills themselves, see the upstream repository’s README and documentation [here](https://github.com/K-Dense-AI/claude-scientific-skills).
 
 ## Manual Usage
 
