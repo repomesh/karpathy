@@ -23,7 +23,7 @@ Create a `.env` file in the `karpathy` directory with your API keys:
 
 ```bash
 OPENROUTER_API_KEY=your_openrouter_api_key_here
-AGENT_MODEL=your_model_name_here  # Optional: defaults to model configured in ADK
+AGENT_MODEL=your_model_name_here
 ```
 
 The `OPENROUTER_API_KEY` is required for the agent to function properly.
